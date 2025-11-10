@@ -3,15 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="https://mega-sistem-desktops.vercel.app/logomegasistem.jpeg">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
     <title>Mega Sistem</title>
 </head>
 <style>
+
+    @font-face {
+        font-family: "Rosemartin";
+        src: url("Rosemartin.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
     body {
         background-color: #010ca8;
         color: beige;
+        font-family: bebasneue;
+    }
+
+    #cabeçalho {
+      display: flex;
+      position: fixed;
+      z-index: 999;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      height: 55px;
+      background: #ffffff34;
+      border-bottom: 5px solid rgb(255, 136, 0);
+      border-radius: 64px;
+      margin-top: 5px;
+      backdrop-filter: blur(10px);
+      width: calc(100% - 20px); 
+      box-sizing: border-box; 
+    }
+
+      #LogoHeader {
+        position: relative;
+        left: -10px;
+        width: 30px;
+        height: auto;
+        border-radius: 16px;
+    }
+
+      #h1-Header {
+        position: relative;
+        left: -20px;
+        width: 250px;
+        height: auto;
+        font-size: small;
+    }
+
+      .header-left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .header-right {
+        display: flex;
+        gap: 15px;
+        height: auto;
+        width: auto;
+    }
+
+      .headerbutton {
+        background-color: rgba(255, 255, 255, 0.271);
+        border: 2px solid white;
+        border-radius: 32px;
+        height: 35px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+      .headerbutton:active {
+        background-color: white;
+        color: #1b0573;
+      }
+    #primeirotitulo {
+        font-family: bebasneue;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #sub-titulo {
+        background-color: rgba(240, 248, 255, 0.267);
+        border-radius: 5px;
+        text-align: center;
+        height: 65px;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .part {
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    #textomissão {
+        font-size: small;
+        padding: 0;
+    }
+    .valores {
+        font-size: small;
+        justify-content: space-between;
+        text-align: left;
+        position: relative;
+        left: 10px;
+        padding: 0;
+    }
+
+    #conteudo {
+        position: relative;
+        top: 70px;
+    }
+
+    #dados {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .dadosbox {
+        background-color: rgba(240, 248, 255, 0.267);
+        border-radius: 16px;
+        border: white;
+        border-width: 1px;
+        width: 150px;
+        height: 180px;
+        margin: 5px;
+        padding: 0px;
+    }
+
+    .h1dados{
+        color: rgb(255, 136, 0);
+        font-size: 40px;
     }
 </style>
 <body>
-    <h1>Sobre nós</h1>
+    <header id="cabeçalho">
+        <div class="header-left">
+          <img id="LogoHeader" src="https://mega-sistem-desktops.vercel.app/logomegasistem.jpeg" />
+          <h1 id="h1-Header">Mega Sistem</h1>
+        </div>
+        <div class="header-right">
+          <button
+            class="headerbutton"
+            id="HomeHeader"
+            onclick="VoltarPagina()"
+          >
+            HOME
+          </button>
+           
+        </div>
+    </header>
+     <div id="conteudo">    
+        <section id="sessão1">
+            <h1 id="primeirotitulo">Sobre a <br> Mega Sistem Informatica</h1>
+            <h3 id="sub-titulo">Mais de uma década oferecendo soluções tecnologicas inovadoras para empresas de todos os portes</h3>
+              <div id="missãopart" class="part">    
+                    <h2 id="TituloMissão">Nossa Missão</h2>
+                    <p id="textomissão">Desenvolver e fornecer sistemas de <span style="font-family: Rosemartin; color: rgb(255, 136, 0); font-size: small;">GESTÂO EMPRESARIAL </span>que transformem a forma como nossos clientes administram seus negócios, proporcionando eficiência, controle e crescimento. Acreditamos que a tecnologia deve ser uma aliada do empresário, simplificando processos complexos e oferecendo insights valiosos para tomada de decisões estratégicas.</p>
+              </div>
+              <div id="valorespart" class="part">
+                    <h2 id="TituloValores">Nossos Valores</h2>
+                    <p class="valores" id="textovalores1">
+                      <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">⬤ </span> - <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">INOVAÇÃO</span> constante em <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">SOLUÇÕES</span> tecnológicas 
+                    </p>
+                    <p class="valores" id="textovalores2"> 
+                      <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">⬤ </span>  - <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">COMPROMETIMENTO</span> com a <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">SATISFAÇÃO</span> do cliente</p>
+                    </P>    
+                    <p class="valores" id="textovalores3"> 
+                       <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">⬤ </span> - <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">QUALIDADE</span> e <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">CONFIABILIDADE</span> em todos os produtos</p>
+                    </P>    
+                    <p class="valores" id="textovalores4"> 
+                       <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">⬤ </span> - suporte técnico <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">ESPECIALIZADO</span> e <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">HUMANIZADO</span>
+                    </P>
+              </div> 
+        </section>
+        <section id="section2">
+         <div id="dados">
+            <div class="dadosbox" id="experienciadados">
+                <h1 class="h1dados">10+</h1>
+                <h3>Anos de Experiencia</h3>
+            </div>
+            <div class="dadosbox" id="clientesdados">
+                <h1 class="h1dados">500+</h1>
+                <h3>Clientes Atendidos</h3>
+            </div>
+            <div class="dadosbox" id="sistemasdados">
+                <h1 class="h1dados">3</h1>
+                <h3>Sistemas Especializados</h3>
+            </div>
+         </div>
+        </section>
+     </div>
 </body>
+<script>
+    function VoltarPagina() {
+        window.location.href = 'index.html';
+    }
+     
+</script>
 </html>
