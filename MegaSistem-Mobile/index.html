@@ -184,7 +184,7 @@
       padding: 10px 20px;
       height: 55px;
       background: #ffffff34;
-      border-bottom: 5px solid rgba(255, 0, 0, 0.548);
+      border-bottom: 5px solid rgb(255, 136, 0);
       border-radius: 64px;
       margin-left: 10px;
       margin-right: 10px;
@@ -238,7 +238,6 @@
         color: #1b0573;
       }
 
-
       #conteudo {
         display: flex;
         width: 100%;
@@ -290,7 +289,6 @@
         font-size: 90%;
       }
       
-
       #ContactWayChef1 {
         background-color: rgba(255, 255, 255, 0.271);
         border: 2px solid white;
@@ -444,7 +442,7 @@
       #quintotitulo{
         position: absolute;
         font-family: "Bebas Neue", sans-serif;
-        top: 2790px;
+        top: 2350px;
         left: 65px;
         font-size: 280%;
         justify-content: center;
@@ -486,10 +484,8 @@
 
       #ContatoPage {
         position: absolute;
-        top: 2200px;
+        top: 2850px;
         color: beige;
-        
-
       }
 
       .infos {
@@ -523,7 +519,7 @@
         height: 230px;
         max-width: 349px;
         width: auto;
-        top: 2965px;
+        top: 2530px;
         left: 75px;
         border-radius: 100px;
         animation: rotateantihorario 100s linear infinite;
@@ -534,9 +530,9 @@
         height: 190px;
         width: auto;
         left: 95px;
-        top: 2985px;
+        top: 2550px;
         border-radius: 100px;
-        animation: rotatehorario 300s linear infinite;
+        animation: rotatehorario 250s linear infinite;
       }
 
       @keyframes rotatehorario {
@@ -570,7 +566,7 @@
         transition: 0.3s;
         height: 150px;
         width: 150px;
-        top: 2410px;
+        top: 1970px;
         left: 115px;
         display: flex;
         align-items: center;
@@ -608,9 +604,7 @@
 
       #botaoSobreNos:hover {
         background: hsla(0, 0%, 100%, 0.3);
-        filter: brightness(1.2);
-      }
-
+        filter: brightness(1.2)section5}
       
       .section2 {
         position: absolute;
@@ -621,17 +615,46 @@
         padding-bottom: 780px;
       }
 
-      .section4 {
+      .section6 {
         position: absolute;
         background-color: rgb(0, 0, 29);
-        top: 2400px;
+        top: 9000px;
         width: 100%;
         padding-bottom: 180px;
         ;
       }
 
-      .section5 {
+      .section4 {
         max-width: 350px;
+      }
+
+      #QuemSomosPage {
+        top: -1000px;
+      }
+
+      #DinamicIsland {
+        text-align: center;
+        position: absolute;
+        justify-content: center;
+        width: 370px;
+        height: 200px;
+        top: 2140px;
+        left: 10px;
+        background-color: rgb(7, 7, 7);
+        border-radius: 50px;
+        font-size: small;
+      }
+
+      #DEMObutton {
+        background-color: rgba(255, 255, 255, 0.271);
+        border: 2px solid white;
+        border-radius: 32px;
+        color: rgb(255, 255, 255);
+        padding: 8px 12px;
+        cursor: pointer;
+        transition: 0.3s;
+        height: 45px;
+        width: 18\0px;      
       }
     </style>
   </head>
@@ -715,13 +738,12 @@
        </a>
        <h2 id="terceirotitulo2"">CLIQUE NAS <br>IMAGENS E CONHEÇA-OS!</h2>
     </section>
-    <section class="section4" id="ContatoPage">
-      <h1 id="quartotitulo">Quer saber mais? <br> Entre em contato conosco!</h1>
-      <conteinter id="infos"></div>
-        <h2 id="paragrafo-infos">
-          📍Nosso endereço <br> <br>Rua Marechal Deodoro da Fonseca, <br>1735 Parque Industrial <br> São Jose do Rio Preto, SP <br> CEP: 15025-070 <br> <br> 📞Telefones de contato <br><br> Fixo: (17) 3212-2300 <br> WhatsApp: (17) 99623-7020 <br> Celular: (17) 99791-0201 <br> <br>✉️Nosso E-mail <br> <br> marcos@megasisteminformatica.com.br <br> <br> ⏰horario de atendimento <br> <br>Segunda à Sexta: 8h às 18h
-        </h2>
-      </conteinter>
+    <section class="section4" id="DinamicIslandPage">
+      <div id="DinamicIsland">
+        <h1 id="DinamicIslandTittle"> Pronto para Transformar seu Negócio?</h1>
+        <p id="DinamicIslandText">entre em contato conosco e descubra como nossos sistemas podem revolucionar a gestão do seu estabelecimento</p>
+        <button id="DEMObutton" onclick="">Solicite uma Demonstração!</button>
+      </div>
     </section>
     <section class="section5" id="QuemSomosPage">
       <h1 id="quintotitulo">Saiba mais sobre <br> a Mega Sistem!</h1>
@@ -734,6 +756,15 @@
         Sobre <br> Nós
       </button>
     </section>
+    <section class="section6" id="ContatoPage">
+      <h1 id="quartotitulo">Quer saber mais? <br> Entre em contato conosco!</h1>
+      <conteinter id="infos"></div>
+        <h2 id="paragrafo-infos">
+          📍Nosso endereço <br> <br>Rua Marechal Deodoro da Fonseca, <br>1735 Parque Industrial <br> São Jose do Rio Preto, SP <br> CEP: 15025-070 <br> <br> 📞Telefones de contato <br><br> Fixo: (17) 3212-2300 <br> WhatsApp: (17) 99623-7020 <br> Celular: (17) 99791-0201 <br> <br>✉️Nosso E-mail <br> <br> marcos@megasisteminformatica.com.br <br> <br> ⏰horario de atendimento <br> <br>Segunda à Sexta: 8h às 18h
+        </h2>
+      </conteinter>
+    </section>
+    
   </body>
 </html>
 <script> 
@@ -750,6 +781,7 @@
   }
 
   function RedirectAboutUs() {
-
+    window.location.href = 'AboutUs.html';
   }
 </script>
+
