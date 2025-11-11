@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Mega Sistem</title>
 </head>
 <style>
@@ -34,11 +34,59 @@
     }
 
     body {
-        background-color: #010ca8;
-        color: beige;
+        background: #00114b; 
+        color: #fff;
         font-family: bebasneue;
     }
 
+     .opaque {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 0;
+          background: #d2d6f1;
+      }
+
+      /* Esconde o efeito de opacidade para IE8 */
+      .lt-ie9 .opaque { display: none; }
+
+      /* Estilo da imagem de fundo fixada */
+      .feature {
+          position: fixed;
+          top: 0;
+          left: 0px;
+          z-index: 0;
+          width: 100%;
+          height: 40%;
+          padding-top: 60%;
+          background: url('FAST-COMPANY-1600-x-900-px-7 (1) (4).png') center center no-repeat;
+          -webkit-background-size: 250%;
+          -moz-background-size: 250%;
+          -o-background-size: 250%;
+          background-size: 250%;
+          -webkit-box-shadow: 0 -50px 20px -20px #00114b inset;
+          -moz-box-shadow: 0 -50px 20px -20px #00114b inset;
+          box-shadow: 0 -50px 20px -20px #00114b inset;
+      }
+
+      /* Conteúdo abaixo da imagem */
+      .content {
+          position: relative;
+          z-index: 1;
+          padding-top: 45%;
+          width: 90%;
+          margin: 0 auto;
+      }
+
+      /* Responsividade */
+      @media only screen and (min-width: 36.250em) {
+          .content {
+              width: 60%;
+              padding-top: 35%;
+          }
+      }
     #cabeçalho {
       display: flex;
       position: fixed;
@@ -98,53 +146,70 @@
       .headerbutton:active {
         background-color: white;
         color: #1b0573;
-      }
-    #primeirotitulo {
-        font-family: bebasneue;
-        text-align: center;
-        font-size: 40px;
     }
 
-    #sub-titulo {
-        background-color: rgba(240, 248, 255, 0.267);
-        border-radius: 5px;
-        text-align: center;
-        height: 65px;
-        padding: 5px;
+    #conteudo{
+      position: relative;
+      top: 200px;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+    }
+
+    #sub-titulo{
+      position: relative;
+      top: 20px;
+      background-color: rgba(240, 248, 255, 0.267);
+      border-radius: 7px;
+    }
+
+    #missãopart {
+      position: relative;
+      top: 70px;
+    }
+
+    #TituloMissão {
+        font-size: 50px;
         margin: 0;
+        
     }
 
-    .part {
-        justify-content: center;
-        justify-items: center;
-        text-align: center;
-        padding: 0;
+    #valorespart {
+      position: relative;
+      top: 300px;
     }
 
-    #textomissão {
-        font-size: small;
-        padding: 0;
-    }
-    .valores {
-        font-size: small;
-        justify-content: space-between;
-        text-align: left;
-        position: relative;
-        left: 10px;
-        padding: 0;
+    #TituloValores {
+      font-size: 50px;
+      margin: 0;
     }
 
-    #conteudo {
-        position: relative;
-        top: 70px;
+    #valores {
+      font-size: 13px;
+      text-align: left;
+      background-color: #d2d6f141;
+      border-radius: 16px;
+      padding: 0px;
+      height: 155px;
+      margin: 0;
+      width: 99%;
+      margin-left: 2px;
     }
 
-    #dados {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-content: space-between;
-        text-align: center;
+    .valoresitens {
+      position: relative;
+      left: 9px;
+      top: 10px;
+    }
+
+    #dados{
+      position: relative;
+      top: -150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: space-between;
+      text-align: center;
     }
 
     .dadosbox {
@@ -159,9 +224,54 @@
     }
 
     .h1dados{
-        color: rgb(255, 136, 0);
-        font-size: 40px;
+      color: rgb(255, 136, 0);
+      font-size: 40px;
     }
+
+     .section6 {
+        position: absolute;
+        background-color: rgb(0, 0, 29);
+        top: 9000px;
+        left: -8px;
+        height: 550px;
+        width: 104%;
+        padding-bottom: 0px;
+        margin: 0;
+        border: 0;
+        padding: 0;
+      }
+
+      #ContatoPage {
+        position: absolute;
+        top: 1050px;
+        
+      }
+
+      .infos {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 200px;
+        text-align: center;
+        font-size: small;
+        height: 40px;
+        width: 100%;
+        padding: 0%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0%;
+        
+      }
+
+      #paragrafo-infos {
+        position: relative;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        font-size: 15px;
+        top: 450px;
+      }
 </style>
 <body>
     <header id="cabeçalho">
@@ -180,28 +290,31 @@
            
         </div>
     </header>
-     <div id="conteudo">    
-        <section id="sessão1">
-            <h1 id="primeirotitulo">Sobre a <br> Mega Sistem Informatica</h1>
+    <div class="feature"></div>
+     <div id="conteudo">   
+       <h1 id="primeirotitulo">Sobre a <br><span style="font-size: 55px; font-family: bebasneue; color: rgb(255, 136, 0); margin: -10px; padding: -10px;"> Mega Sistem</span><br>Informatica</h1>
             <h3 id="sub-titulo">Mais de uma década oferecendo soluções tecnologicas inovadoras para empresas de todos os portes</h3>
-              <div id="missãopart" class="part">    
-                    <h2 id="TituloMissão">Nossa Missão</h2>
-                    <p id="textomissão">Desenvolver e fornecer sistemas de <span style="font-family: Rosemartin; color: rgb(255, 136, 0); font-size: small;">GESTÂO EMPRESARIAL </span>que transformem a forma como nossos clientes administram seus negócios, proporcionando eficiência, controle e crescimento. Acreditamos que a tecnologia deve ser uma aliada do empresário, simplificando processos complexos e oferecendo insights valiosos para tomada de decisões estratégicas.</p>
+        <section id="sessão1">   
+              <div id="missãopart">    
+                    <h2 id="TituloMissão">A Nossa Missão</h2>
+                    <p id="textomissão">Desenvolver e fornecer sistemas de <span style="font-family: Rosemartin; color: rgb(255, 136, 0); font-size: medium;">GESTÂO EMPRESARIAL </span>que transformem a forma como nossos clientes administram seus negócios, proporcionando eficiência, controle e <span style="font-family: Rosemartin; color: rgb(255, 136, 0); font-size: medium;">CRESCIMENTO </span>Acreditamos que a tecnologia deve ser uma aliada do <span style="font-family: Rosemartin; color: rgb(255, 136, 0); font-size: medium;">EMPRESARIO</span>, simplificando processos complexos e oferecendo insights valiosos para tomada de decisões estratégicas.</p>
               </div>
-              <div id="valorespart" class="part">
+              <div id="valorespart">
                     <h2 id="TituloValores">Nossos Valores</h2>
-                    <p class="valores" id="textovalores1">
-                      <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">⬤ </span> - <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">INOVAÇÃO</span> constante em <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">SOLUÇÕES</span> tecnológicas 
-                    </p>
-                    <p class="valores" id="textovalores2"> 
-                      <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">⬤ </span>  - <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">COMPROMETIMENTO</span> com a <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">SATISFAÇÃO</span> do cliente</p>
-                    </P>    
-                    <p class="valores" id="textovalores3"> 
-                       <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">⬤ </span> - <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">QUALIDADE</span> e <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">CONFIABILIDADE</span> em todos os produtos</p>
-                    </P>    
-                    <p class="valores" id="textovalores4"> 
-                       <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">⬤ </span> - suporte técnico <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">ESPECIALIZADO</span> e <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">HUMANIZADO</span>
-                    </P>
+                    <div id="valores">
+                      <p class="valoresitens" id="textovalores1">
+                        <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">⬤ </span> - <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">INOVAÇÃO</span> constante em <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">SOLUÇÕES</span> tecnológicas 
+                      </p>
+                      <p class="valoresitens" id="textovalores2"> 
+                        <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">⬤ </span>  - <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">COMPROMETIMENTO</span> com a <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">SATISFAÇÃO</span> do cliente</p>
+                      </P>    
+                      <p class="valoresitens" id="textovalores3"> 
+                        <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">⬤ </span> - <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">QUALIDADE</span> e <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">CONFIABILIDADE</span> em todos os produtos</p>
+                      </P>    
+                      <p class="valoresitens" id="textovalores4"> 
+                        <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">⬤ </span> - suporte técnico <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">ESPECIALIZADO</span> e <span style="font-family: Rosemartin; color: rgb(255, 136, 0);">HUMANIZADO</span>
+                      </P>
+                    </div>
               </div> 
         </section>
         <section id="section2">
@@ -220,6 +333,14 @@
             </div>
          </div>
         </section>
+        <section class="section6" id="ContatoPage">
+      <h1 id="quartotitulo">Quer saber mais? <br> Entre em contato conosco!</h1>
+      <conteinter id="infos"></div>
+        <h2 id="paragrafo-infos">
+          📍Nosso endereço <br> <br>Rua Marechal Deodoro da Fonseca, <br>1735 Parque Industrial <br> São Jose do Rio Preto, SP <br> CEP: 15025-070 <br> <br> 📞Telefones de contato <br><br> Fixo: (17) 3212-2300 <br> WhatsApp: (17) 99623-7020 <br> Celular: (17) 99791-0201 <br> <br>✉️Nosso E-mail <br> <br> marcos@megasisteminformatica.com.br <br> <br> ⏰horario de atendimento <br> <br>Segunda à Sexta: 8h às 18h
+        </h2>
+      </conteinter>
+    </section>
      </div>
 </body>
 <script>
@@ -227,5 +348,42 @@
         window.location.href = 'index.html';
     }
      
+      $(function() {
+            // Função para calcular e aplicar o zoom e o efeito de blur na imagem de fundo
+            var zoom = $('.feature').css('background-size');
+            zoom = parseFloat(zoom) / 100;
+            var size = zoom * $('.feature').width();
+
+            $(window).on('scroll', function() {
+                var fromTop = $(window).scrollTop();
+                var newSize = size - (fromTop / 3);
+                if (newSize > $('.feature').width()) {
+                    $('.feature').css({
+                        '-webkit-background-size': newSize,
+                        '-moz-background-size': newSize,  
+                        '-o-background-size': newSize,
+                        'background-size': newSize,
+                        '-webkit-filter': 'blur(' + (fromTop / 100) + 'px)',
+                        'opacity': 1 - ((fromTop / $('html').height()) * 1.3)
+                    });
+                }
+            });
+        });
+
+        // Função para criar um efeito de opacidade (se não for Chrome ou Safari)
+        $(function () {
+            var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+            var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+
+            if (isChrome || isSafari) {
+                // Nada a fazer para Chrome ou Safari
+            } else {
+                $('.feature').append('<div class="opaque"></div>');
+                $(window).on('scroll', function(){
+                    var opacity = 0 + ($(window).scrollTop() / 5000);
+                    $('.opaque').css('opacity', opacity);
+                });
+            }
+        });
 </script>
 </html>
