@@ -228,50 +228,100 @@
       font-size: 40px;
     }
 
-     .section6 {
-        position: absolute;
-        background-color: rgb(0, 0, 29);
-        top: 9000px;
-        left: -8px;
-        height: 550px;
-        width: 104%;
-        padding-bottom: 0px;
-        margin: 0;
-        border: 0;
-        padding: 0;
-      }
+    #section3{
+      position: relative;
+      top: 80px;
+      font-size: 25px;
+    }
 
-      #ContatoPage {
-        position: absolute;
-        top: 1050px;
-        
-      }
+    #nossaespecialidadetitulo{
+      position: relative;
+      top: 15px;
+    }
 
-      .infos {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        top: 200px;
-        text-align: center;
-        font-size: small;
-        height: 40px;
-        width: 100%;
-        padding: 0%;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin: 0%;
-        
-      }
+    #especialidades{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-items: center;
+      justify-content: space-between;
+      font-size: 10px;
+      height: 150px;
+      text-align: center;
+      
+    }
 
-      #paragrafo-infos {
-        position: relative;
-        justify-content: center;
-        justify-items: center;
-        text-align: center;
-        font-size: 15px;
-        top: 450px;
-      }
+    .especialidadestitulos{
+      color: rgb(255, 136, 0);
+    }
+
+
+    .especialidadesicones{
+      position: relative;
+      z-index: 1;
+      top: 50px;
+      left: 2px;
+      max-width: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .especialidades{
+      background-color: rgba(240, 248, 255, 0.267);
+      border-radius: 16px;
+      margin: 2px;
+    }
+
+    .pEspecialidades{
+      position: relative;
+      top: -35px;
+    }
+
+    .section6 {
+      position: absolute;
+      background-color: rgb(0, 0, 29);
+      top: 9000px;
+      left: -8px;
+      height: 550px;
+      width: 104%;
+      padding-bottom: 0px;
+      margin: 0;
+      border: 0;
+      padding: 0;
+    }
+
+    #ContatoPage {
+      position: absolute;
+      top: 1250px;
+      
+    }
+
+    .infos {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      top: 200px;
+      text-align: center;
+      font-size: small;
+      height: 40px;
+      width: 100%;
+      padding: 0%;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 0%;
+      
+    }
+
+    #paragrafo-infos {
+      position: relative;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+      font-size: 15px;
+      top: 400px;
+    }
 </style>
 <body>
     <header id="cabeçalho">
@@ -332,6 +382,31 @@
                 <h3>Sistemas Especializados</h3>
             </div>
          </div>
+        </section>
+        <section id="section3">
+          <h1 id="nossaespecialidadetitulo">Nossa especialidade</h1>
+          <div id="especialidades">
+            <div class="especialidades" id="especialidaderestaurantes">
+              <h1 class="especialidadestitulos" id="h1restaurantes">RESTAURANTES</h1>
+              <img class="especialidadesicones" id="iconerestaurante" src="iconerestaurante.png">
+              <p class="pEspecialidades" id="pRestaurantes">pizzarias, restaurantes <br>e estabelecimentos gastronomicos</p>
+            </div>
+            <div class="especialidades" id="especialidadevarejo">
+              <h1 class="especialidadestitulos" id="h1varejo">VAREJO</h1>
+              <img class="especialidadesicones" id="iconevarejo" src="iconevarejo.png">
+              <p class="pEspecialidades" id="pVarejo">Mini mercados, padarias e lojas de doces</p>
+            </div>
+            <div class="especialidades" id="especialidadepetshops">
+              <h1 class="especialidadestitulos" id="h1petshops">PET SHOPS</h1>
+              <img class="especialidadesicones" id="iconepet" src="iconepet.png">
+              <p class="pEspecialidades" id="pPetshops">Clinicas veterinárias e pet shops</p>
+            </div>
+            <div class="especialidades" id="especialidadedistribuidoras">
+              <h1 class="especialidadestitulos" id="h1distribuidoras">DISTRIBUIDORAS</h1>
+              <img class="especialidadesicones" id="iconeroupa" src="iconeroupa.png">
+              <p class="pEspecialidades" id="pDistribuidoras">Distribuidoras e lojas de roupas</P>
+            </div>
+          </div>
         </section>
         <section class="section6" id="ContatoPage">
       <h1 id="quartotitulo">Quer saber mais? <br> Entre em contato conosco!</h1>
